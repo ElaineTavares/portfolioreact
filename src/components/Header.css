@@ -1,0 +1,138 @@
+.header{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-around;
+    padding-block: 20px;
+    padding-top: 40px;
+    background-image: url('../../public/background.jpeg');
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: linear-gradient(
+        360deg,
+        rgb(2, 21, 36, 0.9) 0%,
+        rgb(81, 125, 158) 100%
+    );  
+
+}
+
+.header .link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+    transition: .5s;
+}
+
+.header .link:hover{
+    border-bottom: 3px solid rgba(132, 53, 222, 1);
+    color: rgba(132, 53, 222, 1);
+
+}
+
+.header div{
+    /* border: 2px solid white; */
+    display: flex;
+    gap: 40px;
+}
+
+.linkedin{
+    background-color: white;
+    width: 30px;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.github{
+    background-color: white;
+    width: 30px;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.whats{
+    background-color: white;
+    width: 30px;
+    transition: .5s;
+    border-radius: 50%;
+   
+}
+
+.linkedin:hover{
+    background-color: #0a66c2;
+    transform: translateY(-7px);
+}
+
+.github:hover{
+    transform: translateY(-7px);
+}
+
+.whats:hover{
+    background-color: #0dc143;
+    transform: translateY(-7px);
+   
+}
+
+@media (max-width: 801px){
+    .header{
+        /* border: 2px solid white; */
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 10px; 
+        background: linear-gradient(
+        360deg,
+        rgb(2, 21, 36, 0.9) 0%,
+        rgb(81, 125, 158) 100%
+    );   
+    }
+}
+
+@media (max-width: 601px){
+
+    .header .link{
+           font-size: 14px;    
+    }
+
+    .header .links{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;   
+        margin-right: 45px;
+    }
+
+    .header .redes{
+        /* border: 2px solid yellow; */
+        margin-right: 45px;
+    }
+}
+
+@media (max-width: 401px){
+.header{
+    padding-left: 30px;
+}
+
+    .header .link{
+        font-size: 28px;  
+        margin-bottom: -20px;
+    }
+    
+    .header .redes{
+        /* border: 2px solid yellow; */
+        margin-top: 45px;
+    }
+
+    .linkedin{
+        width: 45px;
+    }
+    
+    .github{
+        width: 45px;
+    }
+    
+    .whats{
+        width: 45px;   
+    }
+}

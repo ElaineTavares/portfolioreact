@@ -1,0 +1,78 @@
+.linhaDoTempo{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.linhaDoTempo h1{
+    font-size: 2.5rem;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.linhaDoTempo .container{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 50px;
+}
+
+.linhaDoTempo .container .card{
+    width: 250px;
+    margin-top: 30px;
+}
+
+.linhaDoTempo .container .card p{
+    text-align: justify;
+}
+
+.linha{
+    background-color: gray;
+    height: 6px;
+    width: 100%;
+    margin-bottom: 30px;
+   
+}
+
+.bolinha1, .bolinha2, .bolinha3, .bolinha4 {
+    background-color: gray;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bolinha1{
+    top: 202px;
+    left: 230px;
+}
+
+.bolinha2{
+    top: 202px;
+    left: 530px;
+}
+
+.bolinha3{
+    top: 202px;
+    left: 830px;
+}
+
+.bolinha4{
+    top: 202px;
+    left: 1130px;
+}
+
+@media (max-width: 401px){
+    .linhaDoTempo{
+        /* border: 2px solid yellow; */
+        margin-right: -240px;
+    }
+
+    .linhaDoTempo p{
+        font-size: 24px;
+    }
+
+  
+}

@@ -1,0 +1,23 @@
+.botao{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(
+        90deg,
+        rgba(132, 53, 222, 1) 0%,
+        rgba(184, 84, 232, 1) 100%
+    );
+    transition: .5s;
+}
+
+.botao:hover{
+    background: linear-gradient(
+        90deg,
+        rgba(184, 84, 232, 1) 0%,
+        rgba(132, 53, 222, 1) 100%
+      
+    ) 
+}
